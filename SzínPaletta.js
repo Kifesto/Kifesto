@@ -1,6 +1,6 @@
 import Szin from "./EgySzin.js";
 import { LISTA } from "./szinekLista.js";
-import kep from "./KepMegjelenít.js";
+import Kep from "./KepMegjelenít.js";
 $(function () {
     let szuloElem = $(".tarolo")
 
@@ -8,6 +8,7 @@ $(function () {
         let k1 = new Szin(index, LISTA[index], szuloElem);
 
     }
-   const image = new kep()
-    image.getWidth(image);
+   const image = new Kep();
+   image.getWidth();
+    
 });
