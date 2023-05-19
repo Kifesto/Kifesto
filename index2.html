@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kifestő</title>
+  <style>
+    .canvas {
+      border: 1px solid #000;
+    }
+
+    .square {
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      border: 1px solid #000;
+    }
+
+    .color-picker {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+      margin-right: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div id="canvas" class="canvas"></div>
+  <div id="color-picker-container">
+    <div id="color-picker-red" class="color-picker" style="background-color: red;"></div>
+    <div id="color-picker-blue" class="color-picker" style="background-color: blue;"></div>
+    <div id="color-picker-green" class="color-picker" style="background-color: green;"></div>
+  </div>
+
+  <script>
+    class Square {
+      constructor(color) {
+        this.color = color;
+        this.element = document.createElement('div');
+        this.element.classList.add('square');
+        this.element.style.backgroundColor = color;
+        this.element.addEventListener('click', this.setColor.bind(this));
+      }
+
+      setColor() {
+        this.element.style.backgroundColor = this.color;
+      }
+    }
+
+    class Painter {
+      constructor(canvasId) {
+        this.canvas = document.getElementById(canvasId);
+        this.squares = [];
+
+        this.createGrid();
+        this.colorPickerContainer = document.getElementById('color-picker-container');
+        this.colorPickerContainer.addEventListener('click', this.setColor.bind(this));
+      }
+
+      createGrid() {
+        const numSquares = 20;
+        for (let i = 0; i < numSquares; i++) {
+          for (let j = 0; j < numSquares; j++) {
+            const square = new Square('white');
+            this.canvas.appendChild(square.element);
+            this.squares.push(square);
+          }
+          this.canvas.appendChild(document.createElement('br'));
+        }
+      }
+
+      setColor(e) {
+        const colorPicker = e.target;
+        if (colorPicker.classList.contains('color-picker')) {
+          const color = colorPicker.style.backgroundColor;
+          this.squares.forEach(square => {
+            square.color = color;
+          });
+        }
+      }
+    }
+
+    // Új kifestő létrehozása
+    const painter = new Painter('canvas');
+  </script>
+</body>
+</html>
