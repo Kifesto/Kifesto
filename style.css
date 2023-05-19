@@ -4,3 +4,15 @@
     margin: 5px;
     border-radius: 15px;
 }
+
+.kepek{
+    margin: auto;
+    gap: 10%;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+}
+
+.kep img{
+    width: 50%;
+    
+}
