@@ -1,12 +1,11 @@
 class Kep {
     constructor(image) {
         const kepEleres = $(".image");
-        let txt = `<img src="pixel-heart.jpg" alt="kep">`;
+        let txt = `<img src="./kepek/4.jpg" alt="kep">`;
         kepEleres.append(txt);
         this.imgELem = kepEleres.children("img");
     }
     getWidth() {
-
 
 
         // Kép betöltődése után a szélesség lekérése
