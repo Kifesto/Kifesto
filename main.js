@@ -1,5 +1,7 @@
 import Szinek from "./szinek.js";
 import { LISTA } from "./adat.js";
+
+
 $(function(){
     let szuloElem = $(".tarolo")
     

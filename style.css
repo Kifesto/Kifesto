@@ -16,3 +16,23 @@
     width: 50%;
     
 }
+
+.canvas {
+    border: 1px solid #000;
+  }
+
+.square {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border: 1px solid #000;
+  }
+
+
+  .color-picker {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-right: 5px;
+  }
