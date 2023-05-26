@@ -2,7 +2,7 @@ import Szin from "./EgySzin.js";
 import { LISTA } from "./szinekLista.js";
 import { KEPEKLISTA } from "./kepek.js";
 import KepMegjelenit from "./KepMegjelenít.js";
-import pixel from "./tablaGen.js";
+import Pixel from "./tablaGen.js";
 $(function () {
    //const painter = new Painter('canvas');
     let szuloElem = $(".tarolo")
