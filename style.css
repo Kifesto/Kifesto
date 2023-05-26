@@ -21,6 +21,9 @@ article{
 header{
   grid-area: h;
 }
+header h1{
+  text-align: center;
+}
 aside{
   grid-area: as;
 }

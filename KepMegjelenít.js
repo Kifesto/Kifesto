@@ -1,9 +1,20 @@
-class Kep {
-    constructor(image) {
-        const kepEleres = $(".image");
-        let txt = `<img src="./kepek/4.jpg" alt="kep">`;
-        kepEleres.append(txt);
-        this.imgELem = kepEleres.children("img");
+class KepMegjelenit {
+    #id
+    constructor(szuloElem,id,azonosito,kokckaElem,szinElem) {
+        this.#id=id;
+        this.azonosito=azonosito;
+        this.szuloElem = szuloElem.append(`<div class="kep" id="${this.azonosito}"><img src="${this.#id}" alt=kep></div>`);
+        this.elem = $(".kep:last-child");
+        this.elem.on("click", ()=>{
+            this.szuloElem.children(".kep").not(this.elem).hide();
+            kokckaElem.show();
+            szinElem.show(); 
+            
+        });
+        //const kepEleres = $(".image");
+        //let txt = kivalasztas;
+        //kepEleres.append(txt);
+        //this.imgELem = kepEleres.children("img");
     }
     getWidth() {
 
@@ -16,6 +27,9 @@ class Kep {
         });
 
     }
+    kivalasztas(){
+
+    }
 
 }
-export default Kep;
+export default KepMegjelenit;
