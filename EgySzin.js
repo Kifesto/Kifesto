@@ -12,14 +12,10 @@ class Szin{
 
 
     }
-    setColor(e) {
-        const colorPicker = $(e.target);
-        if (colorPicker.hasClass('szin')) {
-          const color = colorPicker.css('background-color');
-          this.negyzetek.forEach(negyzet => {
-            negyzet.color = color;
-          });
-        }
-      }
+      getSzín(id) {
+        this.#id = id;
+        let background = $(`${id}`).css("background-color");
+        console.log(background);
+    }
 };
 export default Szin;
