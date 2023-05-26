@@ -8,14 +8,28 @@ $(function () {
     let szuloElem = $(".tarolo")
     let kokckaElem = $(".kockak");
     let kepElem =$(".kepek");
+    let aktSzin = "red";
     for (let index = 0; index < LISTA.length; index++) {
-        let k1 = new Szin(index, LISTA[index], szuloElem);
-        k1.getSzín();
+         new Szin(index, LISTA[index], szuloElem);
     }
     for (let index = 0; index < 1240; index++) {
-        let ko = new pixel(kokckaElem, index);
+         new Pixel(kokckaElem, index);
 
     }
+    $(window).on("szinBeallit", (event) => {
+        let aktElem= event.detail;
+        console.log(aktSzin);
+        aktElem.setSzin(aktSzin);
+     //  ko.setszin(aktElem.getSzin());
+       
+   });
+    
+    $(window).on("szinValasztas", (event) => {
+         aktSzin= event.detail;
+        console.log(aktSzin);
+      //  ko.setszin(aktElem.getSzin());
+        
+    });
     for (let index = 0; index < KEPEKLISTA.length; index++) {
         let kep = new KepMegjelenit(kepElem,KEPEKLISTA[index],index,kokckaElem,szuloElem);
     }
