@@ -15,7 +15,7 @@ class Painter {
     }
 
     createGrid() {
-      const numSquares = 19987;
+      const numSquares = 19;
       for (let i = 0; i < numSquares; i++) {
           const square = new Square('white');
           this.canvas.appendChild(square.element);
