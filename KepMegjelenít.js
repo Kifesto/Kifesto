@@ -7,6 +7,8 @@ class KepMegjelenit {
         this.elem = $(".kep:last-child");
         this.elem.on("click", ()=>{
             this.szuloElem.children(".kep").not(this.elem).hide();
+            this.elem.addClass("kivalasztottKep");
+            this.elem.removeClass("kep");
             kokckaElem.show();
             szinElem.show(); 
             

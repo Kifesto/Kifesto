@@ -15,7 +15,7 @@ class Szin {
   getSzin() {
     this.#szin = this.elem.css("background-color");
     return this.#szin;
-    
+     
   }
   kattintasTrigger() {
         const esemeny=new CustomEvent("szinValasztas", {detail:this.#szin})

@@ -5,7 +5,7 @@ class Pixel {
     this.szuloElem = szuloElem.append(`<div id="${this.#id}" class="kocka"></div>`);
     this.elem = $(`#${this.#id}:last-child`);
     this.aktszin = "red";
-    //this.huzasTrigger();
+    !//this.huzasTrigger();
     this.elem.on("click", () => {
     console.log( this.aktszin);
      

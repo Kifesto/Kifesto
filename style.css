@@ -1,55 +1,80 @@
-*{
+* {
   box-sizing: border-box;
 }
-main{
+
+main {
   display: grid;
-  grid-template-areas: 
-        "h h"
-        "as a";
+  grid-template-areas:
+    "h h"
+    "as a";
   grid-template-columns: 150px auto;
 }
-article{
+
+article {
   grid-area: a;
   border: 2px solid black;
   margin: 10px;
   padding: 1px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+ 
 }
-header{
+
+header {
   grid-area: h;
 }
-header h1{
+
+header h1 {
   text-align: center;
 }
-aside{
+
+aside {
   grid-area: as;
 }
+
 .kocka {
   width: 20px;
-    height: 20px;
-    display: inline-block;
-    border: 1px solid #000;
-    cursor: pointer;
-}
-.szin{
-    width: 95px;
-    height: 90px;
-    margin: 5px;
-    border-radius: 15px;
-    cursor: pointer;
+  height: 20px;
+  display: inline-block;
+  border: 1px solid #000;
+  cursor: pointer;
+  margin: 0;
 }
 
-.kepek{
-    margin: auto;
-    gap: 10%;
-    display: grid;
-    grid-template-columns: repeat(5, auto);
+.szin {
+  width: 95px;
+  height: 90px;
+  margin: 5px;
+  border-radius: 15px;
+  cursor: pointer;
 }
 
-.kep img{
-    width: 50%;
+.kepek {
+
+  margin: auto;
+  margin-top: 10%;
+  display: grid;
+  gap: 0;
+  grid-template-columns: repeat(5, auto);
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
+.kep img {
+  width: 80%;
+  padding: 10px;
+  border: 1.5px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: width 1s;
+}
+
+.kep img:hover {
+  width: 150px;
+}
+
+.kivalasztottKep>img {
+  width: 50%;
+  position: absolute;
+  top: 15%; 
+  left: 30%;
+  z-index: -1;
+}
