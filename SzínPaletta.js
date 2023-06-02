@@ -13,25 +13,30 @@ $(function () {
   for (let index = 0; index < LISTA.length; index++) {
     new Szin(index, LISTA[index], szuloElem);
   }
-  $(window).on("kepSzelesseg", (event) => {
-    kepWidth = event.detail;
-    console.log(kepWidth);
-    for (let index = 0; index < kepWidth; index++) {
-      new Pixel(kokckaElem, index);
-    }
-  });
+  /* $(window).on("kepSzelesseg", (event) => {
+     kepWidth = event.detail;
+     console.log(kepWidth);
+     
+   });*/
 
+  for (let index = 0; index < 1024; index++) {
+    new Pixel(kokckaElem, index);
+  }
+  $(window).on("huzasBeallit", (event) => {
+    let aktElem = event.detail;
+    console.log(aktElem);
+    aktElem.setSzin(aktSzin);
+
+  });
   $(window).on("szinBeallit", (event) => {
     let aktElem = event.detail;
     console.log(aktSzin);
-    aktElem.setSzin(aktSzin);
-    //  ko.setszin(aktElem.getSzin());
+    aktElem.setSzin(this.aktSzin);
   });
 
   $(window).on("szinValasztas", (event) => {
     aktSzin = event.detail;
     console.log(aktSzin);
-    //  ko.setszin(aktElem.getSzin());
   });
   for (let index = 0; index < KEPEKLISTA.length; index++) {
     let kep = new KepMegjelenit(
