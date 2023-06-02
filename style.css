@@ -11,8 +11,8 @@ main {
 }
 
 article {
-  grid-area: a;
   display: grid;
+  grid-area: a;
   grid-template-columns: repeat(35,20px);
   grid-template-rows: repeat(50,20px);
   padding: 1px;
