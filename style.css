@@ -13,8 +13,8 @@ main {
 article {
   display: grid;
   grid-area: a;
-  grid-template-columns: repeat(35, 20px);
-  grid-template-rows: repeat(50, 20px);
+  grid-template-columns: repeat(80, 10px);
+  grid-template-rows: repeat(60, 10px);
   padding: 1px;
   margin: auto;
   position: relative;
@@ -36,10 +36,10 @@ aside {
 }
 
 .kocka {
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
   display: inline-block;
-  border: 1px solid #000;
+  border: 1px solid rgba(90, 89, 89, 0.425);
   cursor: pointer;
   margin: 0;
 }
