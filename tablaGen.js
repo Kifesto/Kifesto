@@ -1,4 +1,4 @@
-class Pixel {
+class TablaGen {
   #id;
   constructor(szuloElem, id) {
     this.#id = id;
@@ -44,4 +44,4 @@ class Pixel {
     }
 
 }
-export default Pixel;
+export default TablaGen;

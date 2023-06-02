@@ -1,8 +1,8 @@
-import Szin from "./EgySzin.js";
+import EgySzin from "./EgySzin.js";
 import { LISTA } from "./szinekLista.js";
 import { KEPEKLISTA } from "./kepek.js";
 import KepMegjelenit from "./KepMegjelenít.js";
-import Pixel from "./tablaGen.js";
+import TablaGen from "./tablaGen.js";
 $(function () {
   //const painter = new Painter('canvas');
   let szuloElem = $(".tarolo");
@@ -11,7 +11,7 @@ $(function () {
   let aktSzin = "red";
   let kepWidth = 0;
   for (let index = 0; index < LISTA.length; index++) {
-    new Szin(index, LISTA[index], szuloElem);
+    new EgySzin(index, LISTA[index], szuloElem);
   }
   /* $(window).on("kepSzelesseg", (event) => {
      kepWidth = event.detail;
@@ -20,7 +20,7 @@ $(function () {
    });*/
 
   for (let index = 0; index < 1024; index++) {
-    new Pixel(kokckaElem, index);
+    new TablaGen(kokckaElem, index);
   }
   $(window).on("huzasBeallit", (event) => {
     let aktElem = event.detail;

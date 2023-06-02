@@ -1,4 +1,4 @@
-class Szin {
+class EgySzin {
   #id;
   #szin;
   constructor(id, szin, szuloElem) {
@@ -23,4 +23,4 @@ class Szin {
     
       }
 };
-export default Szin;
+export default EgySzin;
