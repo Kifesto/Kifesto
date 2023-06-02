@@ -13,10 +13,11 @@ main {
 article {
   display: grid;
   grid-area: a;
-  grid-template-columns: repeat(35,20px);
-  grid-template-rows: repeat(50,20px);
+  grid-template-columns: repeat(35, 20px);
+  grid-template-rows: repeat(50, 20px);
   padding: 1px;
   margin: auto;
+  position: relative;
 }
 
 header {
@@ -29,6 +30,9 @@ header h1 {
 
 aside {
   grid-area: as;
+  display: grid;
+  grid-template-columns: 80px 80px;
+  grid-template-rows: repeat(5, 75px);
 }
 
 .kocka {
@@ -41,11 +45,13 @@ aside {
 }
 
 .szin {
-  width: 95px;
-  height: 90px;
+  width: 75px;
+  height: 70px;
   margin: 5px;
   border-radius: 15px;
   cursor: pointer;
+  border: 1px solid gray;
+  border-radius: 10px;
 }
 
 .kepek {
@@ -72,9 +78,11 @@ aside {
 }
 
 .kivalasztottKep>img {
-  width: 80%;
+  width: 600px;
   position: absolute;
-  top: 15%; 
-  left: 30%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: -1;
+  background-color: transparent;
 }
