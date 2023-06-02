@@ -31,7 +31,7 @@ $(function () {
   $(window).on("szinBeallit", (event) => {
     let aktElem = event.detail;
     console.log(aktSzin);
-    aktElem.setSzin(this.aktSzin);
+    aktElem.setSzin(aktSzin);
   });
 
   $(window).on("szinValasztas", (event) => {
