@@ -19,7 +19,7 @@ $(function () {
      
    });*/
 
-  for (let index = 0; index < 1015; index++) {
+  for (let index = 0; index < 5040; index++) {
     new TablaGen(kokckaElem, index);
   }
   $(window).on("huzasBeallit", (event) => {
