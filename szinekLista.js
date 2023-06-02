@@ -1,7 +1,7 @@
 export let LISTA=[
     "red",
-    "black",
+    "yellow",
     "blue",
     "brown",
     "purple",
-    "green"];
+    "green", "white", "black", "magenta", "orange", "gray", "skyblue"];
