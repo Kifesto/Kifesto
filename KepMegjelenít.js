@@ -15,11 +15,11 @@ class KepMegjelenit {
       this.elem.removeClass("kep");
       kokckaElem.show();
       szinElem.show();
-      console.log(this.getWidth(this.elem));
+     // console.log(this.getWidth(this.elem));
     });
   }
 
-  getWidth(konkKep) {
+ /* getWidth(konkKep) {
     const szelesseg = konkKep.width();
     const magassag = konkKep.height();
     const szazalekosSzelesseg =
@@ -31,7 +31,7 @@ class KepMegjelenit {
       detail: szelesseg,
     });
     window.dispatchEvent(esemeny);
-  }
+  }*/
 }
 
 export default KepMegjelenit;
