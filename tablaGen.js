@@ -5,7 +5,22 @@ class Pixel {
     this.szuloElem = szuloElem.append(`<div id="${this.#id}" class="kocka"></div>`);
     this.elem = $(`#${this.#id}:last-child`);
     this.aktszin = "red";
-    !//this.huzasTrigger();
+    this.ballLenyomva = false;
+    $(document).on("mousedown", () => {
+      this.ballLenyomva = true;
+    });
+
+    this.elem.on("mousemove", () => {
+      if (this.ballLenyomva == true) {
+        this.huzasTrigger();
+      }
+    });
+
+    $(document).on("mouseup", () => {
+      this.ballLenyomva = false;
+    });
+
+
     this.elem.on("click", () => {
     console.log( this.aktszin);
      
@@ -24,11 +39,9 @@ class Pixel {
   }
   
   huzasTrigger() {
-    let self = this;
-    this.elem.on("mousemove", function () {
-        self.elem.css("background-color", "red");
-    });
-  }
+      const esemeny2 = new CustomEvent("huzasBeallit", { detail: this});
+      window.dispatchEvent(esemeny2);
+    }
 
 }
 export default Pixel;
