@@ -1,5 +1,5 @@
 export let KEPEKLISTA = [
-    "kepek/1.jpg",
+    "kepek/9.png",
     "kepek/2.jpg",
     "kepek/3.jpg",
     "kepek/6.jpg",
