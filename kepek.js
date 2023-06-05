@@ -3,5 +3,6 @@ export let KEPEKLISTA = [
     "kepek/2.jpg",
     "kepek/3.jpg",
     "kepek/6.jpg",
-    "kepek/7.jpg"
+    "kepek/7.jpg",
+    "kepek/new.png"
 ];

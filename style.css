@@ -1,9 +1,11 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   font-family: "Varela Round", sans-serif;
 }
+
 main {
   display: grid;
   grid-template-areas:
@@ -26,6 +28,7 @@ article {
 header {
   grid-area: h;
 }
+
 footer {
   grid-area: f;
   text-align: center;
@@ -34,6 +37,7 @@ footer {
   margin-top: 100px;
   padding: 1px;
 }
+
 header h1 {
   text-align: center;
 }
@@ -74,23 +78,24 @@ aside {
   padding-right: 5%;
 }
 
-.egyedi{
+.egyedi {
   margin: auto;
-  margin-top: 30px;
-  margin-left: 55px;
+  margin-top: 100px;
+  margin-left: 20px;
   width: 100%;
   cursor: pointer;
   transition: 0.5s;
 }
 
-.egyedi p{
+.egyedi p {
   padding: 10px;
   border: 1.5px solid black;
   border-radius: 10px;
   cursor: pointer;
   transition: 0.5s;
 }
-.kep img{
+
+.kep img {
   width: 80%;
   padding: 10px;
   border: 1.5px solid black;
@@ -98,11 +103,12 @@ aside {
   cursor: pointer;
   transition: 0.5s;
 }
-.kep img:hover{
+
+.kep img:hover {
   width: 70%;
 }
 
-.kivalasztottKep > img {
+.kivalasztottKep>img {
   width: 600px;
   position: absolute;
   left: 55%;
@@ -132,7 +138,7 @@ aside {
   padding-bottom: 4px;
 }
 
-.szin > p {
+.szin>p {
   text-align: center;
   text-align: center;
   font-size: 50px;
@@ -142,16 +148,20 @@ aside {
   text-decoration: none;
   font-family: cursive;
 }
-.szin > p:hover {
+
+.szin>p:hover {
   font-size: 46px;
   color: #0d6efd;
 }
-aside > a {
+
+aside>a {
   color: white;
 }
-aside > a:hover {
+
+aside>a:hover {
   color: white;
 }
+
 h1 {
   text-align: center;
   margin-top: 20px;
