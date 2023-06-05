@@ -15,6 +15,8 @@ class KepMegjelenit {
       this.elem.removeClass("kep");
       kokckaElem.show();
       szinElem.show();
+      this.footer = $(".ft");
+      this.footer.css("display", "block")
      // console.log(this.getWidth(this.elem));
     });
   }

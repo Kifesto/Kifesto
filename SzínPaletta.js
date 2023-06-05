@@ -49,7 +49,6 @@ $(function () {
       szuloElem
     );
   }
-
   /* const image = new Kep();
    image.getWidth();*/
 });
