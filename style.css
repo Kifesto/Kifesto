@@ -86,3 +86,21 @@ aside {
   z-index: -1;
   background-color: transparent;
 }
+
+.doboz {
+  padding: 10px;
+  position: absolute;
+  top: -27%;
+  left: 90%;
+  width: 30%;
+}
+
+.kszin {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 121px;
+  margin-left: 8px;
+  font-size: 6px;
+  padding-bottom: 4px;
+}

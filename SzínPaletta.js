@@ -3,6 +3,7 @@ import { LISTA } from "./szinekLista.js";
 import { KEPEKLISTA } from "./kepek.js";
 import KepMegjelenit from "./KepMegjelenít.js";
 import TablaGen from "./tablaGen.js";
+import Doboz from "./Doboz.js";
 $(function () {
   //const painter = new Painter('canvas');
   let szuloElem = $(".tarolo");
@@ -37,6 +38,7 @@ $(function () {
   $(window).on("szinValasztas", (event) => {
     aktSzin = event.detail;
     console.log(aktSzin);
+    new Doboz(aktSzin);
   });
   for (let index = 0; index < KEPEKLISTA.length; index++) {
     let kep = new KepMegjelenit(
