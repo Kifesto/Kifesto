@@ -11,17 +11,23 @@ class KepMegjelenit {
     this.elem = $(".kep:last-child");
     this.elem.on("click", () => {
       this.szuloElem.children(".kep").not(this.elem).hide();
-      this.elem.addClass("kivalasztottKep");
-      this.elem.removeClass("kep");
+
       kokckaElem.show();
       szinElem.show();
+
+      this.elem.addClass("kivalasztottKep");
+      this.elem.removeClass("kep");
+
       this.footer = $(".ft");
-      this.footer.css("display", "block")
-     // console.log(this.getWidth(this.elem));
+      this.footer.css("display", "block");
+
+      this.otos = $("#5");
+      this.otos.css("display", "none")
+      // console.log(this.getWidth(this.elem));
     });
   }
 
- /* getWidth(konkKep) {
+  /* getWidth(konkKep) {
     const szelesseg = konkKep.width();
     const magassag = konkKep.height();
     const szazalekosSzelesseg =

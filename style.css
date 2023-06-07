@@ -94,6 +94,9 @@ aside {
   cursor: pointer;
   transition: 0.5s;
 }
+.kep{
+  margin-top: 20px;
+}
 
 .kep img {
   width: 80%;
