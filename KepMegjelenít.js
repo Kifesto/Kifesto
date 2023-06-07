@@ -9,6 +9,8 @@ class KepMegjelenit {
       }" alt=kep></div>`
     );
     this.elem = $(".kep:last-child");
+    this.otos = $("#5");
+    this.otos.css("width", "45%");
     this.elem.on("click", () => {
       this.szuloElem.children(".kep").not(this.elem).hide();
 
@@ -21,8 +23,9 @@ class KepMegjelenit {
       this.footer = $(".ft");
       this.footer.css("display", "block");
 
-      this.otos = $("#5");
+      
       this.otos.css("display", "none")
+     
       // console.log(this.getWidth(this.elem));
     });
   }
