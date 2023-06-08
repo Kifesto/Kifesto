@@ -23,7 +23,9 @@ class KepMegjelenit {
       this.footer = $(".ft");
       this.footer.css("display", "block");
 
-      
+      this.szoveg = $(".szoveg");
+      this.szoveg.css("display", "none")
+
       this.otos.css("display", "none")
      
       // console.log(this.getWidth(this.elem));
