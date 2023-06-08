@@ -13,6 +13,8 @@ main {
     "as a"
     "f f";
   grid-template-columns: 150px auto;
+  max-width: 1400px;
+  margin: auto;
 }
 
 article {
@@ -28,7 +30,9 @@ article {
 header {
   grid-area: h;
 }
-
+header p{
+  text-align: center;
+}
 footer {
   grid-area: f;
   text-align: center;

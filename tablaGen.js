@@ -1,4 +1,4 @@
-class TablaGen {
+ class TablaGen {
   #id;
   constructor(szuloElem, id) {
     this.#id = id;
